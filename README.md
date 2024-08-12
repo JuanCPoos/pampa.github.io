@@ -7,7 +7,7 @@ Clone de una planta
 
 Este repositorio contiene el código fuente del sitio web de "Pampa - Escuelita Saludable", una plataforma destinada a la promoción de talleres de cocina saludable para niños. El sitio está diseñado con un enfoque amigable y educativo para padres y niños interesados en aprender hábitos alimenticios saludables.
 
-## Características
+## Características - actuales y próximas
 
 - **Diseño Responsivo**: El sitio se adapta a diferentes tamaños de pantalla, asegurando una buena experiencia de usuario en dispositivos móviles, tabletas y escritorios.
 - **Menú Hamburgesa**: Un menú de navegación accesible desde cualquier dispositivo.
