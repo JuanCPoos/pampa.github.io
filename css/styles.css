@@ -6,6 +6,12 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 section h2 {
   color: #8bad7b;
   font-size: 3rem;
@@ -27,62 +33,64 @@ section p {
   color: #777162;
 }
 
-#navegacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 0px;
-}
 #navegacion .logo {
-  width: 250px;
+  max-width: 150px;
 }
-#navegacion .logo img {
-  width: 100%;
-}
-#navegacion nav ul {
+#navegacion .navbar-toggler {
   display: flex;
-  justify-content: space-around;
+  padding: 1px 3px;
 }
-#navegacion nav ul li {
-  list-style-type: none;
-  padding: 0em 1em;
-  margin-bottom: 0px;
+#navegacion .navbar-toggler .navbar-toggler-icon {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
 }
-#navegacion nav ul li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 20px;
+#navegacion a {
+  color: #3f3d37;
+}
+#navegacion a:hover {
+  text-decoration: underline;
+}
+#navegacion .contenedor__nav {
+  display: flex;
 }
 
-#portada .header_main {
-  background-image: url(/assets/images/portada.jpeg);
+#portada .header__main {
+  background-image: url(../assets/images/portada.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding-top: 15em;
   padding-bottom: 15em;
+  /* .botones {
+    display: flex;
+    justify-content: space-around;
+    button {
+      padding: 0.4em 1.5em;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+    }
+  } */
 }
-#portada .header_main h1 {
+#portada .header__main h1 {
   color: white;
   text-shadow: #000 1px 1px;
-  font-size: 63px;
+  font-size: 3.2rem;
 }
-#portada .header_main h3 {
+#portada .header__main .texto__portada {
+  font-size: 1.3rem;
+  padding: 0 1em;
+}
+#portada .header__main h3 {
   text-shadow: #000 1px 1px;
   padding-bottom: 2em;
 }
-#portada .header_main .botones {
-  display: flex;
-  justify-content: space-around;
-}
-#portada .header_main .botones button {
-  padding: 0.4em 1.5em;
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+#portada .header__main button {
+  max-width: 250px;
 }
 
 #nosotros .nuestra_empresa {
   position: relative;
-  background-image: url("/assets/images/fondo_nuestra_empresa.jpg");
+  background-image: url("../assets/images/fondo_nuestra_empresa.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -156,6 +164,26 @@ section p {
   }
   .columnas_productos .col_productos {
     width: 100%;
+  }
+}
+@media (width > 991px) {
+  #button__nav {
+    visibility: hidden;
+  }
+}
+@media (max-width: 767px) {
+  .header__main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+  .header__main .botones__portada {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
   }
 }
 /* FOOTER */
