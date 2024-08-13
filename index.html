@@ -9,26 +9,68 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- font awesome css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <div id="navegacion">
+        <div id="navegacion" class="container justify-content-around">
             <div class="logo">
-                <img src="/assets/images/logo.jpg" alt="LOGO">
+                <img src="./assets/images/logo.jpg" class="img-fluid" alt="LOGO">
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#portada">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                </ul>
-                </ul>
-            </nav>
+            <div class="contenedor__nav">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid justify-content-center">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/index.html#top"><i
+                                            class="bi bi-house-door"></i> Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/components/somos.html"><i class="bi bi-people"></i>
+                                        Quienes somos</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="collapse"
+                                        data-bs-target="#submenu" aria-expanded="false">
+                                        <i class="bi bi-list-task"></i>Talleres
+                                    </a>
+                                    <ul class="collapse list-unstyled" id="submenu">
+                                        <li><a class="dropdown-item" href="/index.html#de-que-se-tratan"><i
+                                                    class="bi bi-info-circle"></i> ¿De qué se tratan los
+                                                talleres?</a></li>
+                                        <li><a class="dropdown-item" href="/index.html#4-11"> De 4 a 11 años</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="/index.html#2-3">De 2 a 3 años</a></li>
+                                    </ul>
+                                </li>
+                                <!-- <li class="nav-item">
+                                                        <a class="nav-link" href="#donde-estamos"><i class="bi bi-geo-alt"></i> ¿Dónde estamos?</a>
+                                                    </li> -->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/components/recetarios.html"><i class="bi bi-book"></i>
+                                        Recetarios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/components/galeriaImagenes.html"><i
+                                            class="bi bi-camera"></i> Galeria de
+                                        Fotos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
         </div>
     </header>
     <main>
@@ -56,7 +98,7 @@
                     </div>
                     <div class="columnas_productos row text-center">
                         <div class="col_productos col-4">
-                            <div><img src="/assets/images/soja.jpg" alt="Soja"></div>
+                            <div><img src="./assets/images/soja.jpg" alt="Soja"></div>
                             <div>
                                 <h6>SOJA</h6>
                                 <div class="elementor-divider">
@@ -68,7 +110,7 @@
                             </div>
                         </div>
                         <div class="col_productos col-4">
-                            <div><img src="/assets/images/aceite_soja.jpg" alt=""></div>
+                            <div><img src="./assets/images/aceite_soja.jpg" alt=""></div>
                             <div>
                                 <h6>ACEITE DE SOJA</h6>
                             </div>
@@ -77,7 +119,7 @@
                             </div>
                         </div>
                         <div class="col_productos col-4">
-                            <div><img src="/assets/images/expeller.jpg" alt=""></div>
+                            <div><img src="./assets/images/expeller.jpg" alt=""></div>
                             <div>
                                 <h6>SOJA</h6>
                             </div>
@@ -99,16 +141,17 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos tenetur molestias dolorum
                             obcaecati in. llat consequatur deleniti cumque nostrum nihil ipsum, aliquid omnis sed magni,
                             iste porro.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dolorum veritatis obcaecati
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae dolorum veritatis
+                            obcaecati
                             libero minus, rem suscipit!</p>
-                    </div>                    
+                    </div>
                     <h6>NUESTROS VALORES</h6>
                     <div class="texto">
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos tenetur molestias dolorum
                             obcaecati in. llat consequatur deleniti cumque nostrum nihil ipsum, aliquid omnis sed magni,
                             iste porro.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -170,10 +213,11 @@
             <div class="container">
                 <div class="up_footer">
                     <div class="row">
-                        <div class="col_contactos col-md-6">                            
+                        <div class="col_contactos col-md-6">
                             <ul>
                                 <li><span class="elementor-icon"><i class="fas fa-map-marker-alt"></i>
-                                    <span class="elementor-text">Ruta Nacional 18 Km 36,<br>Entre Ríos, <br>Argentina.</span>
+                                        <span class="elementor-text">Ruta Nacional 18 Km 36,<br>Entre Ríos,
+                                            <br>Argentina.</span>
                                 </li>
                                 <li><span class="elementor-icon"><i class="fas fa-phone-alt"></i></span>
                                     <span class="elementor-text">+54 9 343 333-1122</span>
@@ -183,7 +227,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col_contactos col-md-6">                            
+                        <div class="col_contactos col-md-6">
                             <div class="ubicacion">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5260000000003!2d-58.38183398499999!3d-34.60368498499999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb6c5d6d4c7f%3A0x4f3c9f7b4f7f8d6!2sBuenos%20Aires%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1620202723340!5m2!1ses-419!2sar"

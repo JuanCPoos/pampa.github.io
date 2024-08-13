@@ -28,37 +28,17 @@ section {
 }
 
 #navegacion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 0px;
-  .logo {
-    width: 250px;
-    img {
-      width: 100%;
-    }
-  }
-  nav {
-    ul {
-      display: flex;
-      justify-content: space-around;
-      li {
-        list-style-type: none;
-        padding: 0em 1em;
-        margin-bottom: 0px;
-        a {
-          text-decoration: none;
-          color: #000;
-          font-size: 20px;
-        }
-      }
+  .navbar {
+    background-color: #f7f7f7;
+    .navbar.toggle-icon {
+      color: #6f6446;
     }
   }
 }
 
 #portada {
   .header_main {
-    background-image: url(/assets/images/portada.jpeg);
+    background-image: url(../assets/images/portada.jpeg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -87,7 +67,7 @@ section {
 #nosotros {
   .nuestra_empresa {
     position: relative;
-    background-image: url("/assets/images/fondo_nuestra_empresa.jpg");
+    background-image: url("../assets/images/fondo_nuestra_empresa.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -108,8 +88,8 @@ section {
       position: relative;
       z-index: 2;
     }
-    .texto{
-        padding-bottom: 30px;
+    .texto {
+      padding-bottom: 30px;
     }
     h2 {
       font-size: 2rem;
@@ -167,29 +147,28 @@ section {
   }
 }
 
-
 /* FOOTER */
-#contactos{
-    padding: 60px 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    background-color: #111416;    
-    
-    .col_contactos{
-        display: inline;
-        
-        ul li{
-            list-style-type: none;
-        }
-        .elementor-text{
-            color: #ffffffb3;
-        }
-        .elementor-icon{
-            color: #cc9955;
-        }
-        iframe{
-            margin: 0;
-            padding: 0;
-        }
+#contactos {
+  padding: 60px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  background-color: #111416;
+
+  .col_contactos {
+    display: inline;
+
+    ul li {
+      list-style-type: none;
     }
+    .elementor-text {
+      color: #ffffffb3;
+    }
+    .elementor-icon {
+      color: #cc9955;
+    }
+    iframe {
+      margin: 0;
+      padding: 0;
+    }
+  }
 }
