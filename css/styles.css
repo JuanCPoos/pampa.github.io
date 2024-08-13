@@ -34,7 +34,7 @@ section p {
 }
 
 #navegacion .logo {
-  max-width: 150px;
+  max-width: 100px;
 }
 #navegacion .navbar-toggler {
   display: flex;
